@@ -1,5 +1,7 @@
-FROM debian:8.0
+FROM debian:8
 MAINTAINER Matthias Thubauville
+
+ENV DEBIAN_FRONTEND noninteractive
 
 # Install systems
 RUN apt-get -y update && \
